@@ -1,0 +1,52 @@
+/* variables para guardar valores, hace el codigo mas facil de leer y escribir. */
+:root {
+    --rojo: #E50914;
+    --fondo: #0f0f0f;
+}
+
+/* Valores basicos para una pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* reinicia los estilos del navegador */
+}
+
+body {
+    background: var(--fondo);
+    font-family: "Open Sans", sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Header - Menú */
+header {
+    padding: 30px;
+
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo {
+    font-family: "Bebas Neue", cursive;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size:40px;
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover, header nav a.activo {
+    color: #F3F3F3;
+}
