@@ -56,8 +56,7 @@ header nav a:hover, header nav a.activo {
     font-size: 16px;
     min-height: 40.62em;
     color: #fff;
-    background:linear-gradient(rgba(0, 0, 0, .50) 0%,rgba(0, 0, 0, .50) 100%), url(../img/portada-gta-vice-city.jpg);
-    background-position: center center;
+    background:linear-gradient(rgba(0, 0, 0, .50) 0%,rgba(0, 0, 0, .50) 100%), url(../img/gta-vice-city-principal.jpg);
     background-size: cover;
     margin-bottom: 3.12em;
     display: flex;
@@ -120,9 +119,70 @@ header nav a:hover, header nav a.activo {
 
     .juego-principal {
         font-size: 14px;
+        background-position: center;
     }
 
     .juego-principal .descripcion {
         max-width: 100%;
     }
+}
+
+
+/* Footer */
+.footer {
+    padding-top: 20px;
+    background-color: black;
+}
+
+.footer--contenedor {
+    width: 95%;
+    margin-inline:auto;
+}
+
+.iconos {
+    display: flex;
+    gap: 20px;
+}
+
+.iconos li {
+    width: 30px;
+    height: 30px;
+    list-style: none;
+}
+
+.informacion {
+    display: grid;
+    color: rgb(133, 133, 133);
+    gap: 20px;
+    margin-block: 20px;
+    font-size: 15px;
+}
+
+/* Ajuste dependiendo del tamaño de la pantalla */
+@media (min-width:400px) {
+    .informacion {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:768px) {
+    .informacion {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:992px) {
+    .informacion {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.informacion p:hover {
+    color:white;
+}
+
+.idioma {
+    color: white;
+    padding: 8px;
+    font-weight: 700;
 }
