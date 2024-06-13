@@ -1,6 +1,6 @@
 /* variables para guardar valores, hace el codigo mas facil de leer y escribir. */
 :root {
-    --rojo: #E50914;
+    --rosa: #fd17b0;
     --fondo: #0f0f0f;
 }
 
@@ -37,7 +37,7 @@ header .contenedor {
 header .logotipo {
     font-family: "Bebas Neue", cursive;
     font-weight: normal;
-    color: var(--rojo);
+    color: var(--rosa);
     font-size:40px;
 }
 
