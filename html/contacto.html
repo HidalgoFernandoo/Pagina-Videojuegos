@@ -1,53 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css"> <!-- vinculo el archivo css styles -->
-    <link rel="stylesheet" href="../styles/index.css"> <!-- se linkea el archivo correspondiente a este html -->
-    <title>Document</title>
+    <title>Contacto</title>    
+    <link rel="stylesheet" href="styles/styleContacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- añadimos tipos de fuentes para la pagina -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="contenedor">
-            <h2 class="logotipo">Titulo-Pagina</h2>
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="#" class="activo">Contacto</a>
-                <a href="#">Sobre Nosotros</a>
-                <a href="#">Más Recientes</a>
-            </nav>
-        </div>
-    </header>
-    <!-- Contenido principal -->
-    <main>
+<header>
 
-    </main>
-    <footer class="footer">
-        <div class="footer--contenedor">
-            <div class="informacion">
-                <p>Preguntas frecuentes</p>
-                <p>Prensa</p>
-                <p>Ver</p>
-                <p>Cookies</p>
-                <p>Pruebas de velocidad</p>
-                <p>Atención al cliente</p>
-                <p>Inversionistas</p>
-                <p>Terminos de uso</p>
-                <p>Informacion corporativa</p>
-                <p>Cuenta</p>
-                <p>Empleados</p>
-                <p>Privacidad</p>
-                <p>Contactanos</p>
-            </div>
-            <ul class="iconos">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-            <p class="idioma"><i class="fa-solid fa-earth-americas"></i> Español</p>
+    <div class="contenedor">
+        <h2 class="logotipo">Titulo-Pagina</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Más Recientes</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+    <div class="contacto">
+    <h1>¿Dudas?, ¿Consultas?, ¿Sugerencias? ¡Déjanos tu mensaje!</h1>
+    <div id="mensajeEnviado">
+        <p>¡Tu mensaje ha sido enviado correctamente!</p>
+    </div>
+
+    <form id="contactoForm">
+        <label>Nombre</label>
+        <input type="text" name="user_name" required>
+        <label>Email</label>
+        <input type="email" name="user_email" required>
+        <label>Mensaje</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+    <!-- Scripts para el envío de email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="/js/contacto.js">
+    </script>
+
+<footer class="footer">
+    <div class="footer--contenedor">
+        <div class="informacion">
+            <p>Preguntas frecuentes</p>
+            <p>Prensa</p>
+            <p>Ver</p>
+            <p>Cookies</p>
+            <p>Pruebas de velocidad</p>
+            <p>Atención al cliente</p>
+            <p>Inversionistas</p>
+            <p>Terminos de uso</p>
+            <p>Informacion corporativa</p>
+            <p>Cuenta</p>
+            <p>Empleados</p>
+            <p>Privacidad</p>
+            <p>Contactanos</p>
         </div>
-    </footer>
+        <ul class="iconos">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+        <p class="idioma"><i class="fa-solid fa-earth-americas"></i> Español</p>
+    </div>
+</footer>
 </body>
 </html>
