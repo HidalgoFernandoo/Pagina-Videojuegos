@@ -1,0 +1,112 @@
+
+/* videojuego principal */
+.juego-principal {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background:linear-gradient(rgba(0, 0, 0, .50) 0%,rgba(0, 0, 0, .50) 100%), url(../img/gta-vice-city-principal.jpg);
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.juego-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.juego-principal .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.juego-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.juego-principal .boton {
+    background: rgba( 0,0,0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.juego-principal .boton:hover {
+    background: #fff;
+    color: #000;
+}
+
+.juego-principal .boton i {
+    margin-right: 1.25em;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    /* Acomodamos el header - menú */
+    header .logotipos {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    
+    header .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .juego-principal {
+        font-size: 14px;
+        background-position: center;
+    }
+
+    .juego-principal .descripcion {
+        max-width: 100%;
+    }
+}
+
+.fila__poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.fila__posters {
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.fila__poster:hover {
+    transform: scale(1.08);
+}
+
+.fila__posters::-webkit-scrollbar {
+    display: none;
+}
+
+.fila_posterLarge {
+    max-height: 250px;
+}
+
+.fila_posterLarge:hover {
+    transform: scale(1.09);
+}
+
+.fila {
+    color: white;
+    margin-left: 20px;
+}
