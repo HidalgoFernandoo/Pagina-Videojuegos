@@ -73,6 +73,15 @@
     .juego-principal .descripcion {
         max-width: 100%;
     }
+
+    .fila__posters {
+        scrollbar-width: none; /* Oculta el scrollbar en Firefox */
+        -ms-overflow-style: none; /* Oculta el scrollbar en Edge */
+    }
+
+    .fila__posters::-webkit-scrollbar {
+        display: none; /* Oculta el scrollbar en Chrome y Safari */
+    }
 }
 
 .fila__poster {
@@ -84,14 +93,18 @@
 }
 
 .fila__posters {
-    display:flex;
+    display: flex;
+    overflow-x: auto;
     overflow-y: hidden;
-    overflow-x: scroll;
     padding: 20px;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    white-space: nowrap;
 }
 
 .fila__posters a {
     display: inline-block;
+    flex: 0 0 auto;
     max-height: 250px;
     margin-right: 10px;
 }
@@ -99,9 +112,21 @@
 .fila__poster:hover {
     transform: scale(1.08);
 }
-
 .fila__posters::-webkit-scrollbar {
-    display: none;
+    height: 8px;
+}
+
+.fila__posters::-webkit-scrollbar-track {
+    background: #ffffff00; /* Color de fondo del track */
+}
+
+.fila__posters::-webkit-scrollbar-thumb {
+    background-color: #8888881c; /* Color del thumb */
+    border-radius: 4px;
+}
+
+.fila__posters::-webkit-scrollbar-thumb:hover {
+    background-color: #e5091460; /* Color del thumb al pasar el mouse */
 }
 
 .fila_posterLarge {
