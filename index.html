@@ -31,10 +31,16 @@
                     Grand Theft Auto: Vice City es un videojuego de acción-aventura de mundo abierto de disparos en tercera persona desarrollado por Rockstar North y distribuido por Rockstar Games. Es la cuarta entrada principal de la serie Grand Theft Auto, después de Grand Theft Auto III de 2001, y la sexta instalación en general.
                 </p>
                 <!-- el role="button" sirve para que si alguien entra con un dispositivo para discapacitados, el dispositivo pueda entender que eso es un boton. -->
-                <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+                <button role="button" class="boton" id="openPopupBtn"><i class="fas fa-play"></i>Reproducir</button>
                 <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más Información</button>
             </div>
         </div>
+
+    <div id="overlay"></div> <!-- fondo negro transparente cuando abre el video -->
+    <div id="popup">
+        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/m8oQllwqw_I?si=bFkBX3kSEvOHxH5o?autoplay=1&color=white&rel=0" frameborder="0" allow='autoplay' allowfullscreen></iframe>
+    </div>
+
         <div class="contenedor">
             <!-- Juegos Populares -->
             <div class="fila">
