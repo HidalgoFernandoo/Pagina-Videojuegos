@@ -1,105 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css"> <!-- vinculo el archivo css styles -->
-    <link rel="stylesheet" href="styles/index.css"> <!-- se linkea el archivo correspondiente a este html -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- añadimos tipos de fuentes para la pagina -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="contenedor">
-            <h2 class="logotipo">Titulo-Pagina</h2>
-            <nav>
-                <a href="#" class="activo">Inicio</a>
-                <a href="html/contacto.html">Contacto</a>
-                <a href="#">Sobre Nosotros</a>
-                <a href="#">Más Recientes</a>
-            </nav>
-        </div>
-    </header>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css"> <!-- vinculo el archivo css styles -->
+        <link rel="stylesheet" href="styles/index.css"> <!-- se linkea el archivo correspondiente a este html -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- añadimos tipos de fuentes para la pagina -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <title>Document</title>
+	</head>
 
-    <main>
-        <div class="juego-principal">
-            <div class="contenedor">
-                <h3 class="titulo">GTA:Vice City</h3>
-                <p class="descripcion">
-                    Grand Theft Auto: Vice City es un videojuego de acción-aventura de mundo abierto de disparos en tercera persona desarrollado por Rockstar North y distribuido por Rockstar Games. Es la cuarta entrada principal de la serie Grand Theft Auto, después de Grand Theft Auto III de 2001, y la sexta instalación en general.
-                </p>
-                <!-- el role="button" sirve para que si alguien entra con un dispositivo para discapacitados, el dispositivo pueda entender que eso es un boton. -->
-                <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-                <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más Informacion</button>
+	<body>
+		<header>
+			<div class="contenedor">
+				<h2 class="logotipo">Titulo-Pagina</h2>
+				<nav>
+					<a href="#" class="activo">Inicio</a>
+					<a href="html/contacto.html">Contacto</a>
+					<a href="#">Sobre Nosotros</a>
+					<a href="#">Más Recientes</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+            <div id="overlay"></div> <!-- fondo negro transparente cuando abre el video -->
+            <div id="popup">
+                <iframe
+                    id="youtubeVideo"
+                    src="https://www.youtube.com/embed/m8oQllwqw_I?si=bFkBX3kSEvOHxH5o?autoplay=1&color=white&rel=0"
+                    frameborder="0"
+                    allow="autoplay"
+                    allowfullscreen
+                ></iframe>
             </div>
-        </div>
-        <div class="contenedor">
-            <!-- Juegos Populares -->
-            <div class="fila">
-                <h2>Juegos Populares</h2>
-                <div class="fila__posters">
-                    <a href="#"><img src="img/portada-fallout-4.webp" alt="fallout 4" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-fallout-new-vegas.webp" alt="fallout new vegas" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-5.jpg" alt="gta 5" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-vice-city.jpg" alt="gta vice city" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-half-life-2.jpg" alt="half life 2" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-fallout-4.webp" alt="fallout 4" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-fallout-new-vegas.webp" alt="fallout new vegas" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-5.jpg" alt="gta 5" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-vice-city.jpg" alt="gta vice city" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-half-life-2.jpg" alt="half life 2" class="fila__poster fila_posterLarge"></a>
-                </div>
-            </div>
-            <!-- Nuevos Lanzamientos -->
-            <div class="fila">
-                <h2>Nuevos Lanzamientos</h2>
-                <div class="fila__posters">
-                    <a href="#"><img src="img/portada-cod-black-ops-3.jpg" alt="cod black ops 3" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-cod-ghost.webp" alt="cod ghost" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-5.jpg" alt="" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-vice-city.jpg" alt="" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-half-life-2.jpg" alt="" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-sa.jpg" alt="gta sa" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-cod-black-ops-3.jpg" alt="cod black ops 3" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-cod-ghost.webp" alt="cod ghost" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-5.jpg" alt="" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-vice-city.jpg" alt="" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-half-life-2.jpg" alt="" class="fila__poster fila_posterLarge"></a>
-                    <a href="#"><img src="img/portada-gta-sa.jpg" alt="gta sa" class="fila__poster fila_posterLarge"></a>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer--contenedor">
-            <div class="informacion">
-                <p>Preguntas frecuentes</p>
-                <p>Prensa</p>
-                <p>Ver</p>
-                <p>Cookies</p>
-                <p>Pruebas de velocidad</p>
-                <p>Atención al cliente</p>
-                <p>Inversionistas</p>
-                <p>Terminos de uso</p>
-                <p>Informacion corporativa</p>
-                <p>Cuenta</p>
-                <p>Empleados</p>
-                <p>Privacidad</p>
-                <p>Contactanos</p>
-            </div>
-            <ul class="iconos">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-            <p class="idioma"><i class="fa-solid fa-earth-americas"></i> Español</p>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/da8361ff27.js" crossorigin="anonymous"></script><!-- vinculo la pagina para utilizar sus iconos -->
-    <script src="js/main.js"></script> <!-- vinculo el archivo javascript -->
-    
-</body>
+
+			<div class="juego-principal">
+				<div class="contenedor">
+					<h3 class="titulo">Grand Theft Auto: Vice City</h3>
+					<p class="descripcion">
+						Grand Theft Auto: Vice City es un videojuego de acción-aventura de mundo abierto de disparos en tercera persona desarrollado
+						por Rockstar North y distribuido por Rockstar Games. Es la cuarta entrada principal de la serie Grand Theft Auto, después de
+						Grand Theft Auto III de 2001, y la sexta instalación en general.
+					</p>
+					<!-- el role="button" sirve para que si alguien entra con un dispositivo para discapacitados, el dispositivo pueda entender que eso es un boton. -->
+					<button role="button" class="boton" id="openPopupBtn"><i class="fas fa-play"></i>Reproducir</button>
+					<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más Información</button>
+				</div>
+			</div>
+
+			<div class="contenedor">
+				<!-- Juegos Populares -->
+				<div class="fila">
+					<h2>Juegos Populares</h2>
+					<div class="fila__posters">
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Fallout 4 es un videojuego de rol de acción de disparos en primera y tercera persona desarrollado por Bethesda Game Studios y distribuido por Bethesda Softworks. Es el cuarto juego principal de la serie Fallout y fue lanzado en todo el mundo el 10 de noviembre de 2015, para PlayStation 4, Windows y Xbox One."
+							titulo="Fallout 4"
+							imagen="img/fallout-4.jpg"
+							><img src="img/portada-fallout-4.webp" alt="fallout 4" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Cyberpunk 2077 es un videojuego de rol de acción de disparos en primera persona desarrollado por CD Projekt RED y publicado por CD Projekt que se lanzó para Microsoft Windows, PlayStation 4 y Xbox One el 10 de diciembre de 2020, y posteriormente en PlayStation 5, Xbox Series X|S y Google Stadia."
+							titulo="Cyberpunk 2077"
+							imagen="img/portada-cyberpunk.jpg"
+							><img src="img/cyberpunk.avif" alt="cyberpunk" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Red Dead Redemption 2 es un videojuego de acción-aventura de mundo abierto desarrollado y publicado por Rockstar Games. El juego es la tercera entrada de la serie Red Dead y una precuela del juego de 2010 Red Dead Redemption."
+							titulo="Red Dead Redemption 2"
+							imagen="img/portada-red-dead-redemption-2.jpg"
+							><img src="img/portada-rdr2.jpg" alt="Red Dead Redemption 2" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio escocés Rockstar North y distribuido por Rockstar Games. Este título revolucionario hizo su debut el 17 de septiembre de 2013 en las consolas Xbox 360 y PlayStation 3."
+							titulo="Grand Theft Auto V"
+							imagen="img/portada-gta-5-wallpaper.jpg"
+							><img src="img/portada-gta-5.jpg" alt="gta 5" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Grand Theft Auto: Vice City es un videojuego de acción-aventura de mundo abierto de disparos en tercera persona desarrollado por Rockstar North y distribuido por Rockstar Games. Es la cuarta entrada principal de la serie Grand Theft Auto, después de Grand Theft Auto III de 2001, y la sexta instalación en general."
+							titulo="Grand Theft Auto: Vice City"
+							imagen="img/gta-vice-city-principal.jpg"
+							><img src="img/portada-gta-vice-city.jpg" alt="gta vice city" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Half-Life 2 es la continuación del videojuego Half-Life, una videoaventura de disparos en primera persona. Anteriormente el videojuego se vendía junto a Counter-Strike: Source la secuela de Counter-Strike con el nuevo motor gráfico y el motor físico implantados y los niveles totalmente rediseñados."
+							titulo="Half-Life 2"
+							imagen="img/portada-half-life-2-wallpaper.jpg"
+							><img src="img/portada-half-life-2.jpg" alt="half life 2" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Call of Duty: Ghosts es un videojuego de guerra en primera persona desarrollado por Infinity Ward y distribuido por Activision. Fue lanzado el 5 de noviembre de 2013 para PC, Xbox 360, Xbox One, PlayStation 3, PlayStation 4 y Wii U.​ Forma parte de la saga Call of Duty."
+							titulo="Call of Duty: Ghosts"
+							imagen="img/portada-call-of-duty-ghost.jpg"
+							><img src="img/portada-cod-ghost.webp" alt="cod ghost" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Call of Duty: Black Ops III es un videojuego de disparos en primera persona desarrollado por Treyarch publicado por Activision. Es la duodécima entrada de la serie Call of Duty y la secuela del videojuego de 2012 Call of Duty: Black Ops II. Fue lanzado en PlayStation 4, Windows y Xbox One el 6 de noviembre de 2015."
+							titulo="Call of Duty: Black Ops 3"
+							imagen="img/portada-call-of-duty-black-ops-3.jpg"
+							><img src="img/portada-cod-black-ops-3.jpg" alt="cod 3s" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Un cataclismo ha sumido las tierras de Thedas en el caos. Los dragones cubren el cielo y proyectan una sombra sobre las tierras que están al borde del caos. Los magos declaran la guerra total contra los templarios. Las naciones se alzan unas contra otras. Como líder de la Inquisición, de ti depende restablecer el orden y acabar con los agentes de la entropía. Explora, lidera y combate: unas decisiones complicadas definirán tu aventura, pues una única elección podría cambiar el rumbo de lo que está por suceder."
+							titulo="Dragon Age: Inquisition"
+							imagen="img/dragonage.jpg"
+							><img src="img/portada-dragonage.jpg" alt="dragon age" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Limbo es un videojuego de lógica y plataformas desarrollado por la compañía independiente danesa Playdead y estrenado en 2010 para Xbox Live Arcade. La trama describe las vivencias de un niño mientras busca a su hermana en un entorno siniestro."
+							titulo="Limbo"
+							imagen="img/portada-limbo-wallpaper.jpg"
+							><img src="img/portada-limbo.jpg" alt="limbo" class="fila__poster fila_posterLarge"
+						/></a>
+						<a
+							href="#"
+							class="juego-enlace"
+							descripcion="Fallout: New Vegas es un videojuego de rol de 2010 perteneciente a la saga Fallout, desarrollado por Obsidian Entertainment, y distribuido por Bethesda Softworks, considerado por muchos el mejor Fallout moderno, y uno de los mejores videojuegos de toda la franquicia."
+							titulo="Fallout: New Vegas"
+							imagen="img/portada-fallout-new-vegas.jpg"
+							><img src="img/portada-fallout-new-vegas.webp" alt="fallout new vegas" class="fila__poster fila_posterLarge"
+						/></a>
+					</div>
+				</div>
+                
+				<!-- Nuevos Lanzamientos -->
+				<div class="fila">
+					<h2>Nuevos Lanzamientos</h2>
+					<div class="fila__posters">
+						<a href="#"><img src="img/portada-cod-black-ops-3.jpg" alt="cod black ops 3" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-cod-ghost.webp" alt="cod ghost" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-gta-5.jpg" alt="" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-gta-vice-city.jpg" alt="" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-half-life-2.jpg" alt="" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-gta-sa.jpg" alt="gta sa" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-cod-black-ops-3.jpg" alt="cod black ops 3" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-cod-ghost.webp" alt="cod ghost" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-gta-5.jpg" alt="" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-gta-vice-city.jpg" alt="" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-half-life-2.jpg" alt="" class="fila__poster fila_posterLarge" /></a>
+						<a href="#"><img src="img/portada-gta-sa.jpg" alt="gta sa" class="fila__poster fila_posterLarge" /></a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer--contenedor">
+				<div class="informacion">
+					<p>Preguntas frecuentes</p>
+					<p>Prensa</p>
+					<p>Ver</p>
+					<p>Cookies</p>
+					<p>Pruebas de velocidad</p>
+					<p>Atención al cliente</p>
+					<p>Inversionistas</p>
+					<p>Términos de uso</p>
+					<p>Información corporativa</p>
+					<p>Cuenta</p>
+					<p>Empleados</p>
+					<p>Privacidad</p>
+					<p>Contáctanos</p>
+				</div>
+				<ul class="iconos">
+					<li>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-github"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+					</li>
+				</ul>
+				<p class="idioma"><i class="fa-solid fa-earth-americas"></i> Español</p>
+			</div>
+		</footer>
+
+		<script src="https://kit.fontawesome.com/da8361ff27.js" crossorigin="anonymous"></script> <!-- vinculo la pagina para utilizar sus iconos -->
+		<script src="js/main.js"></script> <!-- vinculo el archivo javascript -->
+	</body>
 </html>

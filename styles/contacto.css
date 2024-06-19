@@ -1,0 +1,72 @@
+main {
+    background:linear-gradient(rgba(0, 0, 0, .50) 0%,rgba(0, 0, 0, .50) 100%), url(../img/gta-vice-city-principal.jpg);
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    padding: 20px;
+    height: 600px;
+    color: #f0f8ff;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+#espaciado__texto {
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.contacto form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-bottom: 20px;
+}
+.contacto h1{
+    padding: 20px;
+}
+
+.contacto label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contacto input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--rosa); /* Usando la variable --rosa para el color de fondo */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contacto input[type="submit"]:hover {
+    background-color: #E50914; /* Color de hover específico */
+    transition: 0.6s;
+}
+
+.contacto #mensajeEnviado {
+    display: none;
+    color:#f3f3f3; /* Color rosa para el mensaje de éxito */
+    margin-top: 10px; /* Espacio entre el formulario y el mensaje */
+}
