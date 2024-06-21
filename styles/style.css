@@ -32,6 +32,7 @@ header .contenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 header .logotipo {
@@ -110,6 +111,7 @@ header nav a:hover, header nav a.activo {
     padding: 8px;
     font-weight: 700;
 }
+<<<<<<< Updated upstream
 
 @media (max-width: 768px) {
     header .contenedor {
@@ -125,4 +127,56 @@ header nav a:hover, header nav a.activo {
         margin-right: 0;
         margin-bottom: 10px;
     }
+=======
+/* Ocultar el menú en pantallas pequeñas por defecto */
+nav {
+    display: none;
+}
+
+/* Mostrar el menú como bloque en pantallas grandes */
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+    }
+}
+
+/* Estilos para el botón de menú */
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Ocultar el botón de menú en pantallas grandes */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/* Mostrar el menú cuando está activado */
+nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%; /* Ajusta según sea necesario */
+    right: 0;
+    background: var(--fondo);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+main,
+footer {
+    transition: margin-top 0.3s ease-in-out;
+}
+
+main.shift-down,
+footer.shift-down {
+    margin-top: 20%; /* Ajusta este valor según la altura del menú */
+    transition: margin-top 0.3s ease-in-out;
+>>>>>>> Stashed changes
 }

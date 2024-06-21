@@ -97,7 +97,6 @@
     }
     
     header .contenedor {
-        flex-direction: column;
         text-align: center;
     }
 
