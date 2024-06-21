@@ -111,23 +111,6 @@ header nav a:hover, header nav a.activo {
     padding: 8px;
     font-weight: 700;
 }
-<<<<<<< Updated upstream
-
-@media (max-width: 768px) {
-    header .contenedor {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    header nav {
-        margin-top: 10px;
-    }
-
-    header nav a {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-=======
 /* Ocultar el menú en pantallas pequeñas por defecto */
 nav {
     display: none;
@@ -178,5 +161,4 @@ main.shift-down,
 footer.shift-down {
     margin-top: 20%; /* Ajusta este valor según la altura del menú */
     transition: margin-top 0.3s ease-in-out;
->>>>>>> Stashed changes
 }

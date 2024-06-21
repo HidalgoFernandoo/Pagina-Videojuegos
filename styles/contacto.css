@@ -17,6 +17,7 @@ main {
 #espaciado__texto {
     font-size: 30px;
     padding-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contacto form {
@@ -27,10 +28,12 @@ main {
     width: 100%;
     max-width: 500px;
     margin-bottom: 20px;
+
 }
 
 .contacto h1 {
     padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .contacto label {
