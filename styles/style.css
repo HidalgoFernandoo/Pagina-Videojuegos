@@ -39,6 +39,7 @@ header .logotipo {
     font-weight: normal;
     color: var(--rosa);
     font-size:40px;
+    letter-spacing: 5px;
 }
 
 header nav a {
@@ -72,6 +73,10 @@ header nav a:hover, header nav a.activo {
     width: 30px;
     height: 30px;
     list-style: none;
+}
+
+.fa-brands {
+    color: white;
 }
 
 .informacion {
