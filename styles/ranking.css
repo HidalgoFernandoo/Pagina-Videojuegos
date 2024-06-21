@@ -15,7 +15,7 @@ main {
 /*SECCION PRINCIPAL*/
 
 .section__principal {
-	padding: 130px 50px 50px 50px;
+	padding: 0px 50px 50px 50px;
 	width: 100%;
 	height: 100vh;
 	display: grid;
@@ -611,15 +611,11 @@ main {
 }
 
 @media (max-width: 810px) {
-	header {
-		padding: 10px 20px 0px 20px;
-	}
-
 	/*PRIMERA PARTE*/
 
 	.section__principal {
 		height: 100vh;
-		padding: 130px 20px 20px 20px;
+		padding: 0px 20px 20px 20px;
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(1, 1fr);
 		grid-template-areas: 'principal';
@@ -778,7 +774,7 @@ main {
 
 	.section__principal {
 		height: 100vh;
-		padding: 130px 20px 20px 20px;
+		padding: 0px 20px 20px 20px;
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(1, 1fr);
 		grid-template-areas: 'principal';
