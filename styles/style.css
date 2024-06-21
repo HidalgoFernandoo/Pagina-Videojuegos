@@ -1,168 +1,168 @@
 /* variables para guardar valores, hace el codigo mas facil de leer y escribir. */
 :root {
-    --rosa: #fd17b0;
-    --fondo: #0f0f0f;
+	--rosa: #fd17b0;
+	--fondo: #0f0f0f;
 }
 
 /* Valores basicos para una pagina */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* reinicia los estilos del navegador */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* reinicia los estilos del navegador */
 }
 
 body {
-    background: var(--fondo);
-    font-family: "Open Sans", sans-serif;
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor {
-    width: 90%;
-    margin: auto;
+	width: 90%;
+	margin: auto;
 }
-
 
 /* Header - Menú */
 header {
-    padding: 30px;
+	padding: 30px;
 }
 
 header .contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
 }
 
 header .logotipo {
-    font-family: "Bebas Neue", cursive;
-    font-weight: normal;
-    color: var(--rosa);
-    font-size:40px;
-    letter-spacing: 5px;
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rosa);
+	font-size: 40px;
+	letter-spacing: 5px;
 }
 
 header nav a {
-    margin: 0;
-    color: #AAA;
-    text-decoration: none;
-    margin-right: 20px;
+	margin: 0;
+	color: #aaa;
+	text-decoration: none;
+	margin-right: 20px;
 }
 
-header nav a:hover, header nav a.activo {
-    color: #F3F3F3;
+header nav a:hover,
+header nav a.activo {
+	color: #f3f3f3;
 }
 
 /* Footer */
 .footer {
-    padding-top: 20px;
-    background-color: black;
+	padding-top: 20px;
+	background-color: black;
 }
 
 .footer--contenedor {
-    width: 95%;
-    margin-inline:auto;
+	width: 95%;
+	margin-inline: auto;
 }
 
 .iconos {
-    display: flex;
-    gap: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 .iconos li {
-    width: 30px;
-    height: 30px;
-    list-style: none;
+	width: 30px;
+	height: 30px;
+	list-style: none;
 }
 
 .fa-brands {
-    color: white;
+	color: white;
 }
 
 .informacion {
-    display: grid;
-    color: rgb(133, 133, 133);
-    gap: 20px;
-    margin-block: 20px;
-    font-size: 15px;
+	display: grid;
+	color: rgb(133, 133, 133);
+	gap: 20px;
+	margin-block: 20px;
+	font-size: 15px;
 }
 
 /* Ajuste dependiendo del tamaño de la pantalla */
-@media (min-width:400px) {
-    .informacion {
-        grid-template-columns: 1fr 1fr;
-    }
+@media (min-width: 400px) {
+	.informacion {
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
-@media (min-width:768px) {
-    .informacion {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+@media (min-width: 768px) {
+	.informacion {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
-@media (min-width:992px) {
-    .informacion {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+@media (min-width: 992px) {
+	.informacion {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
 
 .informacion p:hover {
-    color:white;
+	color: white;
 }
 
 .idioma {
-    color: white;
-    padding: 8px;
-    font-weight: 700;
+	color: white;
+	padding: 8px;
+	font-weight: 700;
 }
 /* Ocultar el menú en pantallas pequeñas por defecto */
 nav {
-    display: none;
+	display: none;
 }
 
 /* Mostrar el menú como bloque en pantallas grandes */
 @media (min-width: 768px) {
-    nav {
-        display: flex;
-    }
+	nav {
+		display: flex;
+	}
 }
 
 /* Estilos para el botón de menú */
 .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
+	display: block;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
 }
 
 /* Ocultar el botón de menú en pantallas grandes */
 @media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
-    }
+	.menu-toggle {
+		display: none;
+	}
 }
 
 /* Mostrar el menú cuando está activado */
 nav.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 15%; /* Ajusta según sea necesario */
-    right: 0;
-    background: var(--fondo);
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 15%; /* Ajusta según sea necesario */
+	right: 0;
+	background: var(--fondo);
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
 }
 main,
 footer {
-    transition: margin-top 0.3s ease-in-out;
+	transition: margin-top 0.3s ease-in-out;
 }
 
 main.shift-down,
 footer.shift-down {
-    margin-top: 20%; /* Ajusta este valor según la altura del menú */
-    transition: margin-top 0.3s ease-in-out;
+	margin-top: 20%; /* Ajusta este valor según la altura del menú */
+	transition: margin-top 0.3s ease-in-out;
 }

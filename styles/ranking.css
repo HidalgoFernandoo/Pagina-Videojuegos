@@ -1,953 +1,936 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-span{
-    background: linear-gradient(45deg, #5E3A91, #9C65CA, #939FE9);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+span {
+	background: linear-gradient(45deg, #5e3a91, #9c65ca, #939fe9);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-main{
-    width: 100%;
-    min-height: 100vh;
+main {
+	width: 100%;
+	min-height: 100vh;
 }
 
 /*SECCION PRINCIPAL*/
 
-.section__principal{
-    padding: 130px 50px 50px 50px;
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas: 
-    "principal principal segunda segunda tercera"
-    "principal principal segunda segunda tercera"
-    "principal principal cuarta quinta quinta"
-    "principal principal cuarta quinta quinta"
-    "principal principal sexta sexta sexta";
-    gap: 10px;
+.section__principal {
+	padding: 130px 50px 50px 50px;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas:
+		'principal principal segunda segunda tercera'
+		'principal principal segunda segunda tercera'
+		'principal principal cuarta quinta quinta'
+		'principal principal cuarta quinta quinta'
+		'principal principal sexta sexta sexta';
+	gap: 10px;
 }
 
-.mando{
-    display: none;
+.mando {
+	display: none;
 }
 
-.abajo{
-    display: none;
+.abajo {
+	display: none;
 }
 
-.card{
-    border-radius: 30px;
-    padding: 50px;
-    display: grid;
-    align-items: center;
+.card {
+	border-radius: 30px;
+	padding: 50px;
+	display: grid;
+	align-items: center;
 }
 
-.principal{
-    background-image: url(../img/f.jpg);
-    background-size: cover;
-    grid-area: principal;
-    background-position: center;
+.principal {
+	background-image: url(../img/f.jpg);
+	background-size: cover;
+	grid-area: principal;
+	background-position: center;
 }
 
-.top{
-    display: flex;
+.top {
+	display: flex;
 }
 
-.op{
-    color: #FFFFFF;
-    margin: 10px;
-    border: 1px solid #FFFFFF;
-    padding: 5px 20px;
-    border-radius: 50px;
-    font-weight: 200;
-    transition: 0.7s;
+.op {
+	color: #ffffff;
+	margin: 10px;
+	border: 1px solid #ffffff;
+	padding: 5px 20px;
+	border-radius: 50px;
+	font-weight: 200;
+	transition: 0.7s;
 }
 
-.op:hover{
-    color: #000;
-    border: 1px solid #000;
+.op:hover {
+	color: #000;
+	border: 1px solid #000;
 }
 
-.texto__bajo__principal{
-    color: #FFFFFF;
-    font-size: 40px;
-    font-weight: 200;
+.texto__bajo__principal {
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 200;
 }
 
-.number{
-    color: #FFFFFF;
-    font-size: 50px;
+.number {
+	color: #ffffff;
+	font-size: 50px;
 }
 
-.texto__bajo{
-    color: #FFFFFF;
-    font-size: 17px;
-    font-weight: 200;
+.texto__bajo {
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 200;
 }
 
-.number__black{
-    color: #1A1A1A;
-    font-size: 50px;
+.number__black {
+	color: #1a1a1a;
+	font-size: 50px;
 }
 
-.texto__bajo__black{
-    color: #1A1A1A;
-    font-size: 17px;
-    font-weight: 200;
+.texto__bajo__black {
+	color: #1a1a1a;
+	font-size: 17px;
+	font-weight: 200;
 }
 
-#busqueda{
-    width: 100%;
-    height: 100%;
+#busqueda {
+	width: 100%;
+	height: 100%;
 }
 
-.arrow{
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.arrow {
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.unete{
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    border: 1px solid #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
+.unete {
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	border: 1px solid #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 30px;
 }
 
 /*SECCION DE CARDS PRINCIPALES*/
 
-.segunda{
-    background: #9D7BFF;
-    grid-area: segunda;
+.segunda {
+	background: #9d7bff;
+	grid-area: segunda;
 }
 
-.tercera{
-    background: #FFFFFF;
-    grid-area: tercera;
+.tercera {
+	background: #ffffff;
+	grid-area: tercera;
 }
 
-.cuarta{
-    background: #FF837B;
-    grid-area: cuarta;
+.cuarta {
+	background: #ff837b;
+	grid-area: cuarta;
 }
 
-.quinta{
-    background: #FFCD67;
-    grid-area: quinta;
+.quinta {
+	background: #ffcd67;
+	grid-area: quinta;
 }
 
-.sexta{
-    padding: 0;
-    background: #1A1A1A;
-    grid-area: sexta;
+.sexta {
+	padding: 0;
+	background: #1a1a1a;
+	grid-area: sexta;
 }
 
 /**SECTION SECUNDARIA**/
 
-.section__secundaria{
-    padding: 130px 50px 50px 50px;
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(6,1fr);
-    grid-template-areas: 
-    "principal principal sexta sexta sexta"
-    "principal principal sexta sexta sexta"
-    "principal principal segunda tercera cuarta"
-    "principal principal segunda tercera cuarta"
-    "principal principal septima octava quinta"
-    "principal principal septima octava quinta";
-    gap: 10px;
+.section__secundaria {
+	padding: 130px 50px 50px 50px;
+	width: 100%;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas:
+		'principal principal sexta sexta sexta'
+		'principal principal sexta sexta sexta'
+		'principal principal segunda tercera cuarta'
+		'principal principal segunda tercera cuarta'
+		'principal principal septima octava quinta'
+		'principal principal septima octava quinta';
+	gap: 10px;
 }
 
 /*SECCION DE CARDS PRINCIPALES*/
 
-.cardos{
-    border-radius: 30px;
+.cardos {
+	border-radius: 30px;
 }
 
-.secundaria{
-    padding: 95px 50px;
-    background-size: cover;
-    grid-area: principal;
-    background-position: center;
+.secundaria {
+	padding: 95px 50px;
+	background-size: cover;
+	grid-area: principal;
+	background-position: center;
 }
 
-.seg__segunda{
-    background: #FFFFFF;
-    background-image: url(../img/zelda.png);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-area: segunda;
+.seg__segunda {
+	background: #ffffff;
+	background-image: url(../img/zelda.png);
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	grid-area: segunda;
 }
 
-.seg__tercera{
-    background: #9D7BFF;
-    background-image: url(../img/the-witcher.png);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-area: tercera;
+.seg__tercera {
+	background: #9d7bff;
+	background-image: url(../img/the-witcher.png);
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	grid-area: tercera;
 }
 
-.seg__cuarta{
-    background: #b0f2c2;
-    background-image: url(../img/Red-Dead-Redemption-2.png);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-area: cuarta;
+.seg__cuarta {
+	background: #b0f2c2;
+	background-image: url(../img/Red-Dead-Redemption-2.png);
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	grid-area: cuarta;
 }
 
-.seg__quinta{
-    background: #201E24;
-    grid-area: quinta;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.seg__quinta {
+	background: #201e24;
+	grid-area: quinta;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.seg__sexta{
-    padding: 0;
-    background: #201E24;
-    grid-area: sexta;
-    display: flex;
-    align-items: center;
-    padding: 20px;
+.seg__sexta {
+	padding: 0;
+	background: #201e24;
+	grid-area: sexta;
+	display: flex;
+	align-items: center;
+	padding: 20px;
 }
 
-.seg__septima{
-    padding: 0;
-    background: #FF837B;
-    background-image: url(../img/The-Last-of-Us.png);
-    background-size: 25%;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-area: septima;
+.seg__septima {
+	padding: 0;
+	background: #ff837b;
+	background-image: url(../img/The-Last-of-Us.png);
+	background-size: 25%;
+	background-position: center;
+	background-repeat: no-repeat;
+	grid-area: septima;
 }
 
-.seg__octava{
-    padding: 0;
-    background: #FFCD67;
-    background-image: url(../img/Super-Mario-Odyssey.png);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-area: octava;
+.seg__octava {
+	padding: 0;
+	background: #ffcd67;
+	background-image: url(../img/Super-Mario-Odyssey.png);
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	grid-area: octava;
 }
 
-.text__top{
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 200;
+.text__top {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 200;
 }
 
-.top__cinco{
-    padding: 10px 20px;
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
-    border-radius: 20px;
-    transition: 0.5s;
+.top__cinco {
+	padding: 10px 20px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	border-radius: 20px;
+	transition: 0.5s;
 }
 
-.top__cinco:hover{
-    border: 1px solid #9C65CA;
-    background: linear-gradient(45deg, #5E3A91, #9C65CA, #939FE9);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.top__cinco:hover {
+	border: 1px solid #9c65ca;
+	background: linear-gradient(45deg, #5e3a91, #9c65ca, #939fe9);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.number__cinco{
-    color: #FFFFFF;
-    font-size: 50px;
-    font-weight: 200;
+.number__cinco {
+	color: #ffffff;
+	font-size: 50px;
+	font-weight: 200;
 }
 
 /**SECTION TRES**/
 
-.section__tres{
-    width: 100%;
-    height: 500px;
-    padding: 130px 50px 50px 50px;
+.section__tres {
+	width: 100%;
+	height: 500px;
+	padding: 130px 50px 50px 50px;
 }
 
-.tit__tres{
-    font-size: 30px;
-    color: #FFFFFF;
-    font-weight: 400;
-    margin: 10px 0;
+.tit__tres {
+	font-size: 30px;
+	color: #ffffff;
+	font-weight: 400;
+	margin: 10px 0;
 }
 
-.texto__tercero{
-    font-size: 17px;
-    color: #FFFFFF;
-    font-weight: 200;
+.texto__tercero {
+	font-size: 17px;
+	color: #ffffff;
+	font-weight: 200;
 }
 
-.down__arrow{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.down__arrow {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.arrow__down{
-    margin: 50px;
-    width: 70px;
-    transition: 0.5s;
+.arrow__down {
+	margin: 50px;
+	width: 70px;
+	transition: 0.5s;
 }
 
-.arrow__down:hover{
-    width: 90px;
+.arrow__down:hover {
+	width: 90px;
 }
 
 /**SECTION CUATRO**/
 
-.section__cuatro{
-    width: 100%;
-    height: 100vh;
-    padding: 130px 50px 50px 50px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-    "veinte veinte topcinco resto resto"
-    "veinte veinte topcinco resto resto"
-    "veinte veinte topcinco resto resto"
-    "veinte veinte titcinco resto resto";
-    gap: 10px;
+.section__cuatro {
+	width: 100%;
+	height: 100vh;
+	padding: 130px 50px 50px 50px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas:
+		'veinte veinte topcinco resto resto'
+		'veinte veinte topcinco resto resto'
+		'veinte veinte topcinco resto resto'
+		'veinte veinte titcinco resto resto';
+	gap: 10px;
 }
 
-.cardcuatro{
-    border-radius: 30px;
-    padding: 50px;
-
+.cardcuatro {
+	border-radius: 30px;
+	padding: 50px;
 }
 
-.veinte__mejores{
-    grid-area: veinte;
-    padding: 50px;
+.veinte__mejores {
+	grid-area: veinte;
+	padding: 50px;
 }
 
-.primeros__cinco{
-    grid-area: topcinco;
-    background: #FFFFFF;
-    padding: 50px;
-    display: grid;
+.primeros__cinco {
+	grid-area: topcinco;
+	background: #ffffff;
+	padding: 50px;
+	display: grid;
 }
 
-.juegos__resto{
-    margin: 0 0 5px 0;
-    font-size: 17px;
-    font-weight: 200;
-    color: #FFFFFF;
+.juegos__resto {
+	margin: 0 0 5px 0;
+	font-size: 17px;
+	font-weight: 200;
+	color: #ffffff;
 }
 
-.topc{
-    font-weight: 400;
+.topc {
+	font-weight: 400;
 }
 
-.top__veinte__tit{
-    grid-area: titcinco;
-    border: 1px solid #9C65CA;
+.top__veinte__tit {
+	grid-area: titcinco;
+	border: 1px solid #9c65ca;
 }
 
-.resto{
-    grid-area: resto;
-    background-image: url(../img/f.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
+.resto {
+	grid-area: resto;
+	background-image: url(../img/f.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 50px;
 }
 
-.top__veinte{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 200;
-    font-size: 50px;
-    background: linear-gradient(45deg, #5E3A91, #9C65CA, #939FE9);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.top__veinte {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 200;
+	font-size: 50px;
+	background: linear-gradient(45deg, #5e3a91, #9c65ca, #939fe9);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.tit__juegos{
-    font-size: 18px;
+.tit__juegos {
+	font-size: 18px;
 }
 
-.text__juegos{
-    font-size: 13px;
+.text__juegos {
+	font-size: 13px;
 }
 
 /**MEDIA QUERYS PC**/
 
-@media(max-width: 1600px){
+@media (max-width: 1600px) {
+	/*PRIMERA PARTE*/
+	.texto__bajo__principal {
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 200;
+	}
 
-    /*PRIMERA PARTE*/
-    .texto__bajo__principal{
-        color: #FFFFFF;
-        font-size: 20px;
-        font-weight: 200;
-    }
-    
-    .number{
-        color: #FFFFFF;
-        font-size: 30px;
-    }
-    
-    .texto__bajo{
-        color: #FFFFFF;
-        font-size: 13px;
-        font-weight: 200;
-    }
-    
-    .number__black{
-        color: #1A1A1A;
-        font-size: 30px;
-    }
-    
-    .texto__bajo__black{
-        color: #1A1A1A;
-        font-size: 13px;
-        font-weight: 200;
-    }
+	.number {
+		color: #ffffff;
+		font-size: 30px;
+	}
 
-    .abajo{
-        margin: 50px;
-        display: inline;
-        width: 50px;
-    }
+	.texto__bajo {
+		color: #ffffff;
+		font-size: 13px;
+		font-weight: 200;
+	}
 
-    /*CUARTA PARTE*/
+	.number__black {
+		color: #1a1a1a;
+		font-size: 30px;
+	}
 
+	.texto__bajo__black {
+		color: #1a1a1a;
+		font-size: 13px;
+		font-weight: 200;
+	}
 
-    .tit__juegos{
-        font-size: 12px;
-    }
+	.abajo {
+		margin: 50px;
+		display: inline;
+		width: 50px;
+	}
 
-    .text__juegos{
-        font-size: 10px;
-    }
+	/*CUARTA PARTE*/
 
-    .juegos__resto{
-        font-size: 12px;
-    }
-    
+	.tit__juegos {
+		font-size: 12px;
+	}
+
+	.text__juegos {
+		font-size: 10px;
+	}
+
+	.juegos__resto {
+		font-size: 12px;
+	}
 }
 
-@media(max-width: 1366px){
+@media (max-width: 1366px) {
+	/*PRIMERA PARTE*/
+	.texto__bajo__principal {
+		font-size: 20px;
+	}
 
-    /*PRIMERA PARTE*/
-    .texto__bajo__principal{
-        font-size: 20px;
-    }
-    
-    .number{
-        font-size: 30px;
-    }
-    
-    .texto__bajo{
-        font-size: 10px;
-    }
-    
-    .number__black{
-        font-size: 30px;
-    }
-    
-    .texto__bajo__black{
-        font-size: 10px;
-    }
+	.number {
+		font-size: 30px;
+	}
 
-    .op{
-        font-size: 10px;
-        color: #FFFFFF;
-        margin: 10px;
-        border: 1px solid #FFFFFF;
-        padding: 5px 20px;
-        border-radius: 50px;
-    }
+	.texto__bajo {
+		font-size: 10px;
+	}
 
-    .number__cinco{
-        font-size: 30px;
-    }
-    
-    /*CUARTA PARTE*/
-    
-    .cardcuatro{
-        padding: 30px;
-    }
+	.number__black {
+		font-size: 30px;
+	}
 
-    .primeros__cinco{
-        display: inline;
-    }
+	.texto__bajo__black {
+		font-size: 10px;
+	}
 
-    .veinte{
-        margin: 30px;
-    }
+	.op {
+		font-size: 10px;
+		color: #ffffff;
+		margin: 10px;
+		border: 1px solid #ffffff;
+		padding: 5px 20px;
+		border-radius: 50px;
+	}
 
-    .tit__juegos{
-        font-size: 14px;
-    }
+	.number__cinco {
+		font-size: 30px;
+	}
 
-    .text__juegos{
-        font-size: 10px;
-    }
+	/*CUARTA PARTE*/
 
-    .juegos__resto{
-        font-size: 10px;
-    }
+	.cardcuatro {
+		padding: 30px;
+	}
 
-    .top__veinte__tit{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	.primeros__cinco {
+		display: inline;
+	}
 
-    .top__veinte{
-        font-size: 30px;
-    }
+	.veinte {
+		margin: 30px;
+	}
+
+	.tit__juegos {
+		font-size: 14px;
+	}
+
+	.text__juegos {
+		font-size: 10px;
+	}
+
+	.juegos__resto {
+		font-size: 10px;
+	}
+
+	.top__veinte__tit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.top__veinte {
+		font-size: 30px;
+	}
 }
 
-@media(max-width: 1280px){
+@media (max-width: 1280px) {
+	/*PRIMERA PARTE*/
+	.texto__bajo__principal {
+		font-size: 20px;
+	}
 
-    /*PRIMERA PARTE*/
-    .texto__bajo__principal{
-        font-size: 20px;
-    }
-    
-    .number{
-        font-size: 30px;
-    }
-    
-    .texto__bajo{
-        font-size: 10px;
-    }
-    
-    .number__black{
-        font-size: 30px;
-    }
-    
-    .texto__bajo__black{
-        font-size: 10px;
-    }
+	.number {
+		font-size: 30px;
+	}
 
-    .op{
-        font-size: 10px;
-        color: #FFFFFF;
-        margin: 10px;
-        border: 1px solid #FFFFFF;
-        padding: 5px 20px;
-        border-radius: 50px;
-    }
+	.texto__bajo {
+		font-size: 10px;
+	}
 
-    .number__cinco{
-        font-size: 30px;
-    }
-    
-    /*CUARTA PARTE*/
-    
-    .cardcuatro{
-        padding: 30px;
-    }
+	.number__black {
+		font-size: 30px;
+	}
 
-    .primeros__cinco{
-        display: inline;
-    }
+	.texto__bajo__black {
+		font-size: 10px;
+	}
 
-    .veinte{
-        margin: 30px;
-    }
+	.op {
+		font-size: 10px;
+		color: #ffffff;
+		margin: 10px;
+		border: 1px solid #ffffff;
+		padding: 5px 20px;
+		border-radius: 50px;
+	}
 
-    .tit__juegos{
-        font-size: 14px;
-    }
+	.number__cinco {
+		font-size: 30px;
+	}
 
-    .text__juegos{
-        font-size: 10px;
-    }
+	/*CUARTA PARTE*/
 
-    .juegos__resto{
-        font-size: 10px;
-    }
+	.cardcuatro {
+		padding: 30px;
+	}
 
-    .top__veinte__tit{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	.primeros__cinco {
+		display: inline;
+	}
 
-    .top__veinte{
-        font-size: 30px;
-    }
+	.veinte {
+		margin: 30px;
+	}
+
+	.tit__juegos {
+		font-size: 14px;
+	}
+
+	.text__juegos {
+		font-size: 10px;
+	}
+
+	.juegos__resto {
+		font-size: 10px;
+	}
+
+	.top__veinte__tit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.top__veinte {
+		font-size: 30px;
+	}
 }
 
 /**MEDIA QUERYS MOBILE**/
 
-@media(max-width: 1000px){
-    .veinte__mejores{
-        display: none;
-    }
+@media (max-width: 1000px) {
+	.veinte__mejores {
+		display: none;
+	}
 
-    .top__cinco{
-        display: none;
-    }
+	.top__cinco {
+		display: none;
+	}
 
-    .section__cuatro{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "topcinco resto resto"
-        "topcinco resto resto"
-        "topcinco resto resto"
-        "titcinco titcinco titcinco ";
-        gap: 10px;
-    }
+	.section__cuatro {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-areas:
+			'topcinco resto resto'
+			'topcinco resto resto'
+			'topcinco resto resto'
+			'titcinco titcinco titcinco ';
+		gap: 10px;
+	}
 }
 
-@media (max-width: 810px){
+@media (max-width: 810px) {
+	header {
+		padding: 10px 20px 0px 20px;
+	}
 
-    header{
-        padding: 10px 20px 0px 20px;
-    }
+	/*PRIMERA PARTE*/
 
-    /*PRIMERA PARTE*/
+	.section__principal {
+		height: 100vh;
+		padding: 130px 20px 20px 20px;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-areas: 'principal';
+	}
 
-    .section__principal{
-        height: 100vh;
-        padding: 130px 20px 20px 20px;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
-        grid-template-areas: 
-        "principal";
-    }
+	.principal {
+		padding: 10px 50px;
+	}
 
-    .principal{
-        padding: 10px 50px;
-    }
+	.baja {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 
-    .baja{
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+	.texto__bajo__principal {
+		text-align: center;
+		font-size: 30px;
+	}
 
-    .texto__bajo__principal{
-        text-align: center;
-        font-size: 30px;
-    }
+	.mando {
+		display: block;
+		width: 300px;
+	}
 
-    .mando{
-        display: block;
-        width: 300px;
-    }
+	.top {
+		display: none;
+	}
 
-    .top{
-        display: none;
-    }
+	.segunda {
+		display: none;
+	}
 
-    .segunda{
-        display: none;
-    }
+	.tercera {
+		display: none;
+	}
 
-    .tercera{
-        display: none;
-    }
+	.cuarta {
+		display: none;
+	}
 
-    .cuarta{
-        display: none;
-    }
+	.quinta {
+		display: none;
+	}
 
-    .quinta{
-        display: none;
-    }
+	.sexta {
+		display: none;
+	}
 
-    .sexta{
-        display: none;
-    }
+	/*SEGUNDA PARTE*/
 
-    /*SEGUNDA PARTE*/
+	.secundaria {
+		display: none;
+	}
 
-    .secundaria{
-        display: none;
-    }
+	.section__secundaria {
+		padding: 130px 20px 0px 20px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(7, 1fr);
+		grid-template-areas:
+			'sexta sexta sexta sexta'
+			'sexta sexta sexta sexta'
+			'segunda segunda tercera tercera'
+			'segunda segunda tercera tercera'
+			'septima septima cuarta cuarta'
+			'septima septima cuarta cuarta'
+			'octava octava  octava octava';
+		gap: 10px;
+	}
+	.seg__quinta {
+		display: none;
+	}
 
-    .section__secundaria{
-        padding: 130px 20px 0px 20px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(7,1fr);
-        grid-template-areas: 
-        "sexta sexta sexta sexta"
-        "sexta sexta sexta sexta"
-        "segunda segunda tercera tercera"
-        "segunda segunda tercera tercera"
-        "septima septima cuarta cuarta"
-        "septima septima cuarta cuarta"
-        "octava octava  octava octava";
-        gap: 10px;
-    }
-    .seg__quinta{
-       display: none;
-    }
+	.top__cinco {
+		display: none;
+	}
 
-    .top__cinco{
-       display: none;
-    }
+	.text__top {
+		font-size: 20px;
+	}
 
-    .text__top{
-        font-size: 20px;
-    }
+	.seg__octava {
+		background-size: 20%;
+	}
 
-    .seg__octava{
-        background-size: 20%;
-    }
-    
+	/*TERCERA PARTE*/
 
-    /*TERCERA PARTE*/
+	.section__tres {
+		width: 100%;
+		height: 600px;
+		padding: 130px 20px 0px 20px;
+	}
 
-    .section__tres{
-        width: 100%;
-        height: 600px;
-        padding: 130px 20px 0px 20px;
-    }
+	.tit__tres {
+		font-size: 25px;
+	}
 
-    .tit__tres{
-        font-size: 25px;
-    }
+	.texto__tercero {
+		font-size: 17px;
+	}
 
-    .texto__tercero{
-        font-size: 17px;
-    }
+	.arrow__down {
+		width: 50px;
+	}
 
-    .arrow__down{
-        width: 50px;
-    }
+	.down__arrow {
+		display: flex;
+	}
 
-    .down__arrow{
-        display: flex;
-    }
-    
-    /*CUARTA PARTE*/
+	/*CUARTA PARTE*/
 
-    .section__cuatro{
-        padding: 0px 20px 20px 20px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-areas: 
-        "resto ";
-        gap: 10px;
-    }
+	.section__cuatro {
+		padding: 0px 20px 20px 20px;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-areas: 'resto ';
+		gap: 10px;
+	}
 
-    .resto{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+	.resto {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-    .juegos__resto{
-        font-size: 20px;
-    }
+	.juegos__resto {
+		font-size: 20px;
+	}
 
-    .veinte__mejores{
-        display: none;
-    }
+	.veinte__mejores {
+		display: none;
+	}
 
-    .top__cinco{
-        display: none;
-    }
+	.top__cinco {
+		display: none;
+	}
 
-    .top__veinte{
-        display: none;
-    }
+	.top__veinte {
+		display: none;
+	}
 
-    .primeros__cinco{
-        display: none;
-    }
+	.primeros__cinco {
+		display: none;
+	}
 
-    .top__veinte__tit{
-        display: none;
-    }
-
+	.top__veinte__tit {
+		display: none;
+	}
 }
 
+@media (max-width: 428px) {
+	/*PRIMERA PARTE*/
 
-@media (max-width: 428px){
+	.section__principal {
+		height: 100vh;
+		padding: 130px 20px 20px 20px;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-areas: 'principal';
+	}
 
-    /*PRIMERA PARTE*/
+	.principal {
+		padding: 10px;
+	}
 
-    .section__principal{
-        height: 100vh;
-        padding: 130px 20px 20px 20px;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
-        grid-template-areas: 
-        "principal";
-    }
+	.baja {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 
-    .principal{
-        padding: 10px;
-    }
+	.texto__bajo__principal {
+		text-align: center;
+		font-size: 15px;
+	}
 
-    .baja{
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+	.mando {
+		display: block;
+		width: 250px;
+	}
 
-    .texto__bajo__principal{
-        text-align: center;
-        font-size: 15px;
-    }
+	.top {
+		display: none;
+	}
 
-    .mando{
-        display: block;
-        width: 250px;
-    }
+	.segunda {
+		display: none;
+	}
 
-    .top{
-        display: none;
-    }
+	.tercera {
+		display: none;
+	}
 
-    .segunda{
-        display: none;
-    }
+	.cuarta {
+		display: none;
+	}
 
-    .tercera{
-        display: none;
-    }
+	.quinta {
+		display: none;
+	}
 
-    .cuarta{
-        display: none;
-    }
+	.sexta {
+		display: none;
+	}
 
-    .quinta{
-        display: none;
-    }
+	/*SEGUNDA PARTE*/
 
-    .sexta{
-        display: none;
-    }
+	.secundaria {
+		display: none;
+	}
 
-    /*SEGUNDA PARTE*/
+	.section__secundaria {
+		padding: 130px 20px 0px 20px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(7, 1fr);
+		grid-template-areas:
+			'sexta sexta sexta sexta'
+			'sexta sexta sexta sexta'
+			'segunda segunda tercera tercera'
+			'segunda segunda tercera tercera'
+			'septima septima cuarta cuarta'
+			'septima septima cuarta cuarta'
+			'octava octava  octava octava';
+		gap: 10px;
+	}
+	.seg__quinta {
+		display: none;
+	}
 
-    .secundaria{
-        display: none;
-    }
+	.top__cinco {
+		display: none;
+	}
 
-    .section__secundaria{
-        padding: 130px 20px 0px 20px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(7,1fr);
-        grid-template-areas: 
-        "sexta sexta sexta sexta"
-        "sexta sexta sexta sexta"
-        "segunda segunda tercera tercera"
-        "segunda segunda tercera tercera"
-        "septima septima cuarta cuarta"
-        "septima septima cuarta cuarta"
-        "octava octava  octava octava";
-        gap: 10px;
-    }
-    .seg__quinta{
-       display: none;
-    }
+	.seg__octava {
+		background-size: 30%;
+	}
 
-    .top__cinco{
-       display: none;
-    }
+	.text__top {
+		font-size: 13px;
+	}
 
-    .seg__octava{
-        background-size: 30%;
-    }
+	/*TERCERA PARTE*/
 
-    .text__top{
-        font-size: 13px;
-    }
-    
+	.section__tres {
+		width: 100%;
+		height: 600px;
+		padding: 130px 20px 0px 20px;
+	}
 
-    /*TERCERA PARTE*/
+	.tit__tres {
+		font-size: 20px;
+	}
 
-    .section__tres{
-        width: 100%;
-        height: 600px;
-        padding: 130px 20px 0px 20px;
-    }
+	.texto__tercero {
+		font-size: 13px;
+	}
 
-    .tit__tres{
-        font-size: 20px;
-    }
+	.arrow__down {
+		width: 50px;
+	}
 
-    .texto__tercero{
-        font-size: 13px;
-    }
+	.arrow__down:hover {
+		display: none;
+	}
 
-    .arrow__down{
-        width: 50px;
-    }
+	.down__arrow {
+		display: flex;
+	}
 
-    .arrow__down:hover{
-        display: none;
-    }
+	/*CUARTA PARTE*/
 
-    .down__arrow{
-        display: flex;
-    }
-    
-    /*CUARTA PARTE*/
+	.section__cuatro {
+		padding: 20px;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-areas: 'resto ';
+		gap: 10px;
+	}
 
-    .section__cuatro{
-        padding: 20px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-areas: 
-        "resto ";
-        gap: 10px;
-    }
+	.juegos__resto {
+		margin-bottom: 5px;
+		font-size: 15px;
+	}
 
-    .juegos__resto{
-        margin-bottom: 5px;
-        font-size: 15px;
-    }
+	.veinte__mejores {
+		display: none;
+	}
 
-    .veinte__mejores{
-        display: none;
-    }
+	.top__cinco {
+		display: none;
+	}
 
-    .top__cinco{
-        display: none;
-    }
+	.top__veinte {
+		display: none;
+	}
 
-    .top__veinte{
-        display: none;
-    }
+	.primeros__cinco {
+		display: none;
+	}
 
-    .primeros__cinco{
-        display: none;
-    }
+	.top__veinte__tit {
+		display: none;
+	}
 
-    .top__veinte__tit{
-        display: none;
-    }
-
-    footer{
-        margin-top: 130px;
-    }
-
+	footer {
+		margin-top: 130px;
+	}
 }
